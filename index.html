@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>پورتال اطلاع‌رسانی دانشگاه علم و فناوری</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>پورتال اطلاع‌رسانی دانشگاه علم و فناوری - نسخه ۲</title>
   <style>
     :root {
       --primary: #0f4c81;
@@ -13,115 +13,25 @@
       --white: #ffffff;
       --border: #e2e8f0;
     }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Tahoma, 'Segoe UI', sans-serif;
-    }
-    body {
-      background-color: var(--secondary);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    header {
-      background-color: var(--primary);
-      color: var(--white);
-      padding: 1.5rem 2rem;
-      border-bottom: 4px solid var(--accent);
-    }
-    .header-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav {
-      background: var(--white);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      padding: 0.75rem 2rem;
-    }
-    nav ul {
-      max-width: 1200px;
-      margin: 0 auto;
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: var(--text);
-      font-weight: bold;
-      font-size: 0.9rem;
-    }
-    nav a:hover {
-      color: var(--primary);
-    }
-    .container {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
-    }
-    .card {
-      background: var(--white);
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      border: 1px solid var(--border);
-    }
-    h2 {
-      color: var(--primary);
-      margin-bottom: 1rem;
-      font-size: 1.25rem;
-      border-bottom: 2px solid var(--secondary);
-      padding-bottom: 0.5rem;
-    }
-    .news-item {
-      padding: 1rem 0;
-      border-bottom: 1px dashed var(--border);
-    }
-    .news-item:last-child {
-      border-bottom: none;
-    }
-    .news-item h3 {
-      font-size: 1rem;
-      margin-bottom: 0.25rem;
-    }
-    .news-item span {
-      font-size: 0.8rem;
-      color: #718096;
-    }
-    .grid-links {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-    }
-    .grid-links a {
-      display: block;
-      background: var(--secondary);
-      padding: 0.75rem;
-      border-radius: 4px;
-      text-decoration: none;
-      color: var(--text);
-      font-size: 0.85rem;
-      border-right: 3px solid var(--primary);
-      transition: background 0.2s;
-    }
-    .grid-links a:hover {
-      background: #e2e8f0;
-    }
-    footer {
-      background: #1a202c;
-      color: #a0aec0;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 0.85rem;
-      margin-top: 3rem;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Tahoma, 'Segoe UI', sans-serif; }
+    body { background-color: var(--secondary); color: var(--text); line-height: 1.6; }
+    header { background-color: var(--primary); color: var(--white); padding: 1.5rem 2rem; border-bottom: 4px solid var(--accent); }
+    .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    nav { background: var(--white); box-shadow: 0 2px 4px rgba(0,0,0,0.05); padding: 0.75rem 2rem; }
+    nav ul { max-width: 1200px; margin: 0 auto; list-style: none; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: var(--text); font-weight: bold; font-size: 0.9rem; }
+    nav a:hover { color: var(--primary); }
+    .container { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; }
+    .card { background: var(--white); border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; border: 1px solid var(--border); }
+    h2 { color: var(--primary); margin-bottom: 1rem; font-size: 1.25rem; border-bottom: 2px solid var(--secondary); padding-bottom: 0.5rem; }
+    .news-item { padding: 1rem 0; border-bottom: 1px dashed var(--border); }
+    .news-item:last-child { border-bottom: none; }
+    .news-item h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .news-item span { font-size: 0.8rem; color: #718096; }
+    .grid-links { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .grid-links a { display: block; background: var(--secondary); padding: 0.75rem; border-radius: 4px; text-decoration: none; color: var(--text); font-size: 0.85rem; border-right: 3px solid var(--primary); transition: background 0.2s; }
+    .grid-links a:hover { background: #e2e8f0; }
+    footer { background: #1a202c; color: #a0aec0; text-align: center; padding: 1.5rem; font-size: 0.85rem; margin-top: 3rem; }
   </style>
 </head>
 <body>
@@ -129,7 +39,7 @@
   <header>
     <div class="header-content">
       <div>
-        <h1>دانشگاه علم و فناوری</h1>
+        <h1>دانشگاه علم و فناوری — نسخه ۲</h1>
         <p>درگاه رسمی اطلاع‌رسانی و خدمات الکترونیک</p>
       </div>
       <div>
@@ -153,7 +63,13 @@
     <main>
       <section class="card">
         <h2>اخبار و رویدادهای دانشگاه</h2>
-        
+
+        <article class="news-item">
+          <h3>تمدید مهلت ثبت‌نام وام‌های دانشجویی صندوق رفاه</h3>
+          <p>دانشجویان متقاضی وام تحصیلی و مسکن می‌توانند تا پایان هفته جاری نسبت به ثبت درخواست اقدام نمایند.</p>
+          <span>تاریخ انتشار: ۳ شهریور ۱۴۰۵</span>
+        </article>
+
         <article class="news-item">
           <h3>ثبت‌نام متقاضیان پذیرش بدون آزمون در مقطع کارشناسی ارشد</h3>
           <p>داوطلبان می‌توانند از تاریخ ۱۰ شهریور با مراجعه به سامانه جامع آموزش نسبت به بارگذاری مدارک اقدام نمایند.</p>
@@ -164,12 +80,6 @@
           <h3>برگزاری بیست و هشتمین همایش بین‌المللی کامپیوتر و امنیت داده</h3>
           <p>محورهای همایش، زمان‌بندی ارسال مقالات و نحوه ثبت‌نام در وب‌سایت دانشکده مهندسی کامپیوتر اعلام شد.</p>
           <span>تاریخ انتشار: ۱ شهریور ۱۴۰۵</span>
-        </article>
-
-        <article class="news-item">
-          <h3>تقویم آموزشی و زمان‌بندی انتخاب واحد نیم‌سال اول</h3>
-          <p>برنامه زمان‌بندی انتخاب واحد کلیه مقاطع تحصیلی از طریق سامانه گلستان در دسترس قرار گرفت.</p>
-          <span>تاریخ انتشار: ۲۵ مرداد ۱۴۰۵</span>
         </article>
       </section>
 
@@ -192,25 +102,4 @@
         <div class="grid-links" style="grid-template-columns: 1fr;">
           <a href="/systems/golestan">سامانه جامع آموزشی (گلستان)</a>
           <a href="/systems/lms">سامانه آموزش مجازی (LMS)</a>
-          <a href="/systems/stu">سامانه تغذیه و رفاه دانشجویی</a>
-          <a href="/systems/mail">سامانه پست الکترونیک دانشگاه</a>
-          <a href="/systems/library">کتابخانه مرکزی و پایگاه اسناد</a>
-          <a href="/systems/nan">درگاه نظام ایده‌ها و نیازها (نان)</a>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>اطلاعیه مهم</h2>
-        <p style="font-size: 0.85rem; color: #4a5568;">
-          کلیه خدمات الکترونیکی در روزهای پنج‌شنبه به دلیل به‌روزرسانی زیرساخت‌های شبکه ممکن است با اختلال موقت مواجه شوند.
-        </p>
-      </section>
-    </aside>
-  </div>
-
-  <footer>
-    <p>تمامی حقوق مادی و معنوی متعلق به دانشگاه علم و فناوری می‌باشد © ۱۴۰۵</p>
-  </footer>
-
-</body>
-</html>
+          <a 
