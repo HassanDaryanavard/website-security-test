@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>پورتال اطلاع‌رسانی دانشگاه علم و فناوری</title>
 
   <style>
@@ -10,9 +11,7 @@
       --primary: #1e3a8a;
       --secondary: #f1f5f9;
       --text: #334155;
-      --accent: #b45309;
       --white: #ffffff;
-      --border: #e2e8f0;
     }
 
     * {
@@ -31,226 +30,88 @@
     header {
       background-color: var(--primary);
       color: var(--white);
-      padding: 1.5rem 2rem;
-      border-bottom: 4px solid var(--accent);
+      padding: 2rem;
+      text-align: center;
     }
 
-    .header-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1rem;
-    }
-
-    nav {
-      background: var(--white);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      padding: 0.75rem 2rem;
-    }
-
-    nav ul {
-      max-width: 1200px;
-      margin: 0 auto;
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--text);
-      font-weight: bold;
-      font-size: 0.9rem;
-    }
-
-    nav a:hover {
-      color: var(--primary);
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
-    }
-
-    .card {
-      background: var(--white);
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: var(--white);
       border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      border: 1px solid var(--border);
+      text-align: center;
     }
 
-    h2 {
-      color: var(--primary);
+    h1 {
       margin-bottom: 1rem;
-      font-size: 1.25rem;
-      border-bottom: 2px solid var(--secondary);
-      padding-bottom: 0.5rem;
     }
 
-    .news-item {
-      padding: 1rem 0;
-      border-bottom: 1px dashed var(--border);
+    p {
+      margin-bottom: 1.5rem;
     }
 
-    .news-item:last-child {
-      border-bottom: none;
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
     }
 
-    .news-item h3 {
-      font-size: 1rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .news-item span {
-      font-size: 0.8rem;
-      color: #64748b;
-    }
-
-    .grid-links {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.75rem;
-    }
-
-    .grid-links a {
-      display: block;
-      background: var(--secondary);
-      padding: 0.75rem;
-      border-radius: 4px;
+    .links a {
       text-decoration: none;
-      color: var(--text);
-      font-size: 0.85rem;
-      border-right: 3px solid var(--primary);
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
     }
 
     footer {
-      background: #1e293b;
-      color: #cbd5e1;
       text-align: center;
-      padding: 1.5rem;
-      font-size: 0.85rem;
       margin-top: 3rem;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-
-      }
-  </style>
-</head: column;
-        align-items: flex-start;
-      }
+      padding: 1rem;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <div class="header-content">
-      <div>
-        <h1>دانشگاه علم و فناوری</h1>
-        <p>درگاه رسمی اطلاع‌رسانی و خدمات الکترونیک</p>
-      </div>
 
-      <div>
-        <span>سال تحصیلی ۱۴۰۵-۱۴۰۴</span>
-      </div>
-    </div>
+  <header>
+    <h1>دانشگاه علم و فناوری</h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="/index.html">صفحه اصلی</a></li>
-      <li><a href="/about">درباره دانشگاه</a></li>
-      <li><a href="/faculties">دانشکده‌ها</a></li>
-      <li><a href="/research">پژوهش و فناوری</a></li>
-      <li><a href="/education">معاونت آموزشی</a></li>
-      <li><a href="/contact">تماس با ما</a></li>
+  <main>
 
-      <!-- TEST STEP 3: suspicious external link -->
-      <li><a href="https://t.me/sepehr-test">کانال پشتیبانی</a></li>
-    </ul>
-  </nav>
+    <h2>اطلاعیه</h2>
 
-  <div class="container">
-    <main>
-      <section class="card">
-        <h2>اخبار و رویدادهای دانشگاه</h2>
+    <p>
+      درگاه اطلاع‌رسانی دانشگاه در حال بروزرسانی است.
+    </p>
 
-        <article class="news-item">
-          <h3>اعلام زمان انتخاب واحد نیمسال جدید</h3>
-          <p>
-            برنامه انتخاب واحد دانشجویان در سامانه جامع آموزش دانشگاه منتشر شد.
-          </p>
-          <span>تاریخ انتشار: ۱ شهریور ۱۴۰۵</span>
-        </article>
+    <p>
+      جهت دریافت اطلاعات بیشتر از بخش‌های اصلی سامانه استفاده نمایید.
+    </p>
 
-        <article class="news-item">
-          <h3>فراخوان ثبت‌نام در دوره‌های مهارتی تابستان</h3>
-          <p>
-            دانشجویان علاقه‌مند می‌توانند برای شرکت در دوره‌های مهارتی ثبت‌نام کنند.
-          </p>
-          <span>تاریخ انتشار: ۳۱ مرداد ۱۴۰۵</span>
-        </article>
+    <div class="links">
 
-        <article class="news-item">
-          <h3>برگزاری نشست علمی اعضای هیئت علمی</h3>
-          <p>
-            نشست علمی دانشگاه با حضور استادان و پژوهشگران برگزار خواهد شد.
-          </p>
-          <span>تاریخ انتشار: ۳۰ مرداد ۱۴۰۵</span>
-        </article>
-      </section>
+      <a href="/index.html">
+        صفحه اصلی
+      </a>
 
-      <section class="card">
-        <h2>دانشکده‌ها و مراکز آموزشی</h2>
+      <a href="/contact">
+        تماس با ما
+      </a>
 
-        <div class="grid-links">
-          <a href="/faculties/computer">دانشکده مهندسی کامپیوتر</a>
-          <a href="/faculties/electrical">دانشکده مهندسی برق</a>
-          <a href="/faculties/mechanical">دانشکده مهندسی مکانیک</a>
-          <a href="/faculties/civil">دانشکده مهندسی عمران</a>
-          <a href="/faculties/science">دانشکده علوم پایه</a>
-          <a href="/faculties/management">دانشکده اقتصاد و مدیریت</a>
-        </div>
-      </section>
-    </main>
+    </div>
 
-    <aside>
-      <section class="card">
-        <h2>سامانه‌های پرکاربرد</h2>
-
-        <div class="grid-links" style="grid-template-columns: 1fr;">
-          <a href="/systems/golestan">سامانه جامع آموزشی</a>
-          <a href="/systems/lms">سامانه آموزش مجازی</a>
-          <a href="/systems/stu">سامانه تغذیه و رفاه دانشجویی</a>
-          <a href="/systems/mail">سامانه پست الکترونیک دانشگاه</a>
-          <a href="/systems/library">کتابخانه مرکزی</a>
-          <a href="/systems/nan">درگاه نظام ایده‌ها و نیازها</a>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>اطلاعیه</h2>
-        <p style="font-size: 0.85rem; color: #475569;">
-          برنامه کلاس‌ها و اطلاعیه‌های آموزشی از طریق سامانه جامع آموزش منتشر می‌شود.
-        </p>
-      </section>
-    </aside>
-  </div>
+  </main>
 
   <footer>
-    <p>تمامی حقوق مادی و معنوی متعلق به دانشگاه علم و فناوری می‌باشد © ۱۴۰۵</p>
+    <p>
+      تمامی حقوق مادی و معنوی متعلق به دانشگاه علم و فناوری می‌باشد © ۱۴۰۵
+    </p>
   </footer>
+
 </body>
 </html>
