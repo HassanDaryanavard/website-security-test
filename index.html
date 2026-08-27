@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>پورتال اطلاع‌رسانی دانشگاه علم و فناوری</title>
+
+  <!-- تغییر کنترل‌شده عنوان برای ایجاد LOW -->
+  <title>پورتال اطلاع‌رسانی و خدمات دانشگاه علم و فناوری</title>
 
   <style>
     :root {
@@ -131,20 +133,6 @@
       border-right: 3px solid var(--primary);
     }
 
-    .test-warning {
-      background: #fff7ed;
-      border: 1px solid #fdba74;
-      color: #9a3412;
-      padding: 1rem;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
-
-    .test-warning a {
-      color: #9a3412;
-      font-weight: bold;
-    }
-
     footer {
       background: #1e293b;
       color: #cbd5e1;
@@ -163,112 +151,254 @@
 </head>
 
 <body>
+
   <header>
     <div class="header-content">
+
       <div>
         <h1>دانشگاه علم و فناوری</h1>
-        <p>درگاه رسمی اطلاع‌رسانی و خدمات الکترونیک</p>
+
+        <!-- تغییر جزئی متن -->
+        <p>درگاه رسمی اطلاع‌رسانی، اخبار و خدمات الکترونیک دانشگاه</p>
       </div>
 
       <div>
         <span>سال تحصیلی ۱۴۰۵-۱۴۰۴</span>
       </div>
+
     </div>
   </header>
 
+
   <nav>
     <ul>
-      <li><a href="/index.html">صفحه اصلی</a></li>
-      <li><a href="/about">درباره دانشگاه</a></li>
-      <li><a href="/faculties">دانشکده‌ها</a></li>
-      <li><a href="/research">پژوهش و فناوری</a></li>
-      <li><a href="/education">معاونت آموزشی</a></li>
-      <li><a href="/contact">تماس با ما</a></li>
+
+      <li>
+        <a href="/index.html">
+          صفحه اصلی
+        </a>
+      </li>
+
+      <li>
+        <a href="/about">
+          درباره دانشگاه
+        </a>
+      </li>
+
+      <li>
+        <a href="/faculties">
+          دانشکده‌ها
+        </a>
+      </li>
+
+      <li>
+        <a href="/research">
+          پژوهش و فناوری
+        </a>
+      </li>
+
+      <!-- لینک /education حذف شده -->
+
+      <li>
+        <a href="/contact">
+          تماس با ما
+        </a>
+      </li>
+
+      <!-- لینک عادی جدید -->
+      <li>
+        <a href="/news">
+          اخبار دانشگاه
+        </a>
+      </li>
+
     </ul>
   </nav>
 
+
   <div class="container">
+
     <main>
 
-      <section class="test-warning">
-        <h2>اطلاعیه آزمایشی</h2>
-        <p>
-          این بخش صرفاً برای تست سامانه مانیتورینگ امنیت وب‌سایت اضافه شده است.
-        </p>
+      <section class="card">
 
-        <p>
-          لینک آزمایشی:
-          <a href="https://t.me/sepehr-test">کانال خارجی تست</a>
-        </p>
+        <h2>
+          اخبار و رویدادهای دانشگاه
+        </h2>
+
+
+        <article class="news-item">
+
+          <h3>
+            اعلام برنامه انتخاب واحد نیمسال جدید
+          </h3>
+
+          <p>
+            برنامه زمان‌بندی انتخاب واحد دانشجویان برای نیمسال جدید
+            در سامانه جامع آموزش دانشگاه منتشر شده است.
+          </p>
+
+          <span>
+            تاریخ انتشار: ۲ شهریور ۱۴۰۵
+          </span>
+
+        </article>
+
+
+        <article class="news-item">
+
+          <h3>
+            آغاز ثبت‌نام دوره‌های مهارتی دانشجویان
+          </h3>
+
+          <p>
+            دانشجویان علاقه‌مند می‌توانند برای حضور در دوره‌های
+            مهارتی و آموزشی جدید دانشگاه ثبت‌نام کنند.
+          </p>
+
+          <span>
+            تاریخ انتشار: ۱ شهریور ۱۴۰۵
+          </span>
+
+        </article>
+
+
+        <article class="news-item">
+
+          <h3>
+            برگزاری نشست علمی اعضای هیئت علمی
+          </h3>
+
+          <p>
+            نشست علمی دانشگاه با حضور استادان، پژوهشگران و
+            اعضای هیئت علمی برگزار خواهد شد.
+          </p>
+
+          <span>
+            تاریخ انتشار: ۳۰ مرداد ۱۴۰۵
+          </span>
+
+        </article>
+
       </section>
 
-      <section class="card">
-        <h2>اخبار و رویدادهای دانشگاه</h2>
-
-        <article class="news-item">
-          <h3>اعلام زمان انتخاب واحد نیمسال جدید</h3>
-          <p>
-            برنامه انتخاب واحد دانشجویان در سامانه جامع آموزش دانشگاه منتشر شد.
-          </p>
-          <span>تاریخ انتشار: ۱ شهریور ۱۴۰۵</span>
-        </article>
-
-        <article class="news-item">
-          <h3>فراخوان ثبت‌نام در دوره‌های مهارتی تابستان</h3>
-          <p>
-            دانشجویان علاقه‌مند می‌توانند برای شرکت در دوره‌های مهارتی ثبت‌نام کنند.
-          </p>
-          <span>تاریخ انتشار: ۳۱ مرداد ۱۴۰۵</span>
-        </article>
-
-        <article class="news-item">
-          <h3>برگزاری نشست علمی اعضای هیئت علمی</h3>
-          <p>
-            نشست علمی دانشگاه با حضور استادان و پژوهشگران برگزار خواهد شد.
-          </p>
-          <span>تاریخ انتشار: ۳۰ مرداد ۱۴۰۵</span>
-        </article>
-      </section>
 
       <section class="card">
-        <h2>دانشکده‌ها و مراکز آموزشی</h2>
+
+        <h2>
+          دانشکده‌ها و مراکز آموزشی
+        </h2>
+
 
         <div class="grid-links">
-          <a href="/faculties/computer">دانشکده مهندسی کامپیوتر</a>
-          <a href="/faculties/electrical">دانشکده مهندسی برق</a>
-          <a href="/faculties/mechanical">دانشکده مهندسی مکانیک</a>
-          <a href="/faculties/civil">دانشکده مهندسی عمران</a>
-          <a href="/faculties/science">دانشکده علوم پایه</a>
-          <a href="/faculties/management">دانشکده اقتصاد و مدیریت</a>
+
+          <a href="/faculties/computer">
+            دانشکده مهندسی کامپیوتر
+          </a>
+
+          <a href="/faculties/electrical">
+            دانشکده مهندسی برق
+          </a>
+
+          <a href="/faculties/mechanical">
+            دانشکده مهندسی مکانیک
+          </a>
+
+          <a href="/faculties/civil">
+            دانشکده مهندسی عمران
+          </a>
+
+          <a href="/faculties/science">
+            دانشکده علوم پایه
+          </a>
+
+          <!-- لینک /faculties/management حذف شده -->
+
+          <!-- لینک عادی جدید -->
+          <a href="/faculties/architecture">
+            دانشکده معماری و شهرسازی
+          </a>
+
         </div>
+
       </section>
+
     </main>
 
+
     <aside>
-      <section class="card">
-        <h2>سامانه‌های پرکاربرد</h2>
 
-        <div class="grid-links" style="grid-template-columns: 1fr;">
-          <a href="/systems/golestan">سامانه جامع آموزشی</a>
-          <a href="/systems/lms">سامانه آموزش مجازی</a>
-          <a href="/systems/stu">سامانه تغذیه و رفاه دانشجویی</a>
-          <a href="/systems/mail">سامانه پست الکترونیک دانشگاه</a>
-          <a href="/systems/library">کتابخانه مرکزی</a>
-          <a href="/systems/nan">درگاه نظام ایده‌ها و نیازها</a>
+      <section class="card">
+
+        <h2>
+          سامانه‌های پرکاربرد
+        </h2>
+
+
+        <div
+          class="grid-links"
+          style="grid-template-columns: 1fr;"
+        >
+
+          <a href="/systems/golestan">
+            سامانه جامع آموزشی
+          </a>
+
+          <a href="/systems/lms">
+            سامانه آموزش مجازی
+          </a>
+
+          <a href="/systems/stu">
+            سامانه تغذیه و رفاه دانشجویی
+          </a>
+
+          <a href="/systems/mail">
+            سامانه پست الکترونیک دانشگاه
+          </a>
+
+          <a href="/systems/library">
+            کتابخانه مرکزی
+          </a>
+
+          <a href="/systems/nan">
+            درگاه نظام ایده‌ها و نیازها
+          </a>
+
         </div>
+
       </section>
 
+
       <section class="card">
-        <h2>اطلاعیه</h2>
-        <p style="font-size: 0.85rem; color: #475569;">
-          برنامه کلاس‌ها و اطلاعیه‌های آموزشی از طریق سامانه جامع آموزش منتشر می‌شود.
+
+        <h2>
+          اطلاعیه
+        </h2>
+
+        <p
+          style="
+            font-size: 0.85rem;
+            color: #475569;
+          "
+        >
+          برنامه کلاس‌ها، رویدادهای آموزشی و آخرین اطلاعیه‌های
+          دانشگاه از طریق سامانه جامع آموزش منتشر می‌شود.
         </p>
+
       </section>
+
     </aside>
+
   </div>
 
+
   <footer>
-    <p>تمامی حقوق مادی و معنوی متعلق به دانشگاه علم و فناوری می‌باشد © ۱۴۰۵</p>
+
+    <p>
+      تمامی حقوق مادی و معنوی متعلق به دانشگاه علم و فناوری می‌باشد © ۱۴۰۵
+    </p>
+
   </footer>
+
 </body>
 </html>
