@@ -4,68 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>هشدار امنیتی - وب‌سایت دستکاری شده</title>
+  <title>پورتال اطلاع‌رسانی دانشگاه علم و فناوری</title>
 
   <style>
     body {
+      font-family: Tahoma, Arial, sans-serif;
       margin: 0;
-      background: #111;
-      color: #eee;
-      font-family: Tahoma, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #1f4e79;
+      color: white;
+      padding: 25px;
       text-align: center;
     }
 
-    .warning {
-      max-width: 700px;
-      margin: 100px auto;
-      padding: 40px;
-      border: 2px solid #cc0000;
-      border-radius: 10px;
-      background: #1a1a1a;
+    nav {
+      background: #163a5c;
+      padding: 15px;
+      text-align: center;
     }
 
-    h1 {
-      color: #ff3333;
-      font-size: 36px;
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
     }
 
-    .message {
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .systems {
       margin-top: 30px;
-      font-size: 20px;
-      line-height: 2;
     }
 
-    .signature {
+    .systems a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 15px;
+      background: #e8eef4;
+      color: #163a5c;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
       margin-top: 40px;
-      color: #ff6666;
-      font-family: monospace;
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
 
-  <div class="warning">
+<header>
+  <h1>دانشگاه علم و فناوری</h1>
+  <p>پورتال اطلاع‌رسانی دانشگاه</p>
+</header>
 
-    <h1>Security Warning</h1>
+<nav>
+  <a href="/index.html">صفحه اصلی</a>
+  <a href="/about">درباره دانشگاه</a>
+  <a href="/faculties">دانشکده‌ها</a>
+  <a href="/research">پژوهش</a>
+  <a href="/education">آموزش</a>
+  <a href="/contact">تماس با ما</a>
+</nav>
 
-    <div class="message">
-      <p>این صفحه به صورت آزمایشی تغییر داده شده است.</p>
+<main>
 
-      <p>
-        Website has been defaced
-      </p>
+  <h2>به وب‌سایت دانشگاه خوش آمدید</h2>
 
-      <p>
-        محتوای اصلی وب‌سایت در دسترس نیست.
-      </p>
-    </div>
+  <p>
+    این وب‌سایت جهت اطلاع‌رسانی اخبار، خدمات آموزشی،
+    پژوهشی و دانشجویی دانشگاه ایجاد شده است.
+  </p>
 
-    <div class="signature">
-      TEST SECURITY INCIDENT
-    </div>
+  <h3>دانشکده‌ها</h3>
+
+  <ul>
+    <li><a href="/faculties/computer">دانشکده مهندسی کامپیوتر</a></li>
+    <li><a href="/faculties/electrical">دانشکده مهندسی برق</a></li>
+    <li><a href="/faculties/mechanical">دانشکده مهندسی مکانیک</a></li>
+    <li><a href="/faculties/civil">دانشکده مهندسی عمران</a></li>
+    <li><a href="/faculties/science">دانشکده علوم</a></li>
+    <li><a href="/faculties/management">دانشکده مدیریت</a></li>
+  </ul>
+
+  <div class="systems">
+
+    <h3>سامانه‌های دانشگاه</h3>
+
+    <a href="/systems/golestan">سامانه گلستان</a>
+    <a href="/systems/lms">سامانه آموزش مجازی</a>
+    <a href="/systems/stu">سامانه دانشجویی</a>
+    <a href="/systems/mail">پست الکترونیکی</a>
+    <a href="/systems/library">کتابخانه دیجیتال</a>
+    <a href="/systems/nan">سامانه تغذیه</a>
 
   </div>
+
+</main>
+
+<footer>
+  دانشگاه علم و فناوری - کلیه حقوق محفوظ است
+</footer>
 
 </body>
 </html>
