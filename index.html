@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>پورتال اطلاع‌رسانی دانشگاه علم و فناوری</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>پورتال اطلاع‌رسانی دانشگاه علم و فناوری - نسخه ۲</title>
 
   <style>
     :root {
-      --primary: #1e3a8a;
-      --secondary: #f1f5f9;
-      --text: #334155;
-      --accent: #b45309;
+      --primary: #0f4c81;
+      --secondary: #f4f6f9;
+      --text: #2d3748;
+      --accent: #d97706;
       --white: #ffffff;
       --border: #e2e8f0;
     }
@@ -46,7 +46,7 @@
 
     nav {
       background: var(--white);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
       padding: 0.75rem 2rem;
     }
 
@@ -111,7 +111,7 @@
 
     .news-item span {
       font-size: 0.8rem;
-      color: #64748b;
+      color: #718096;
     }
 
     .grid-links {
@@ -129,11 +129,16 @@
       color: var(--text);
       font-size: 0.85rem;
       border-right: 3px solid var(--primary);
+      transition: background 0.2s;
+    }
+
+    .grid-links a:hover {
+      background: #e2e8f0;
     }
 
     footer {
-      background: #1e293b;
-      color: #cbd5e1;
+      background: #1a202c;
+      color: #a0aec0;
       text-align: center;
       padding: 1.5rem;
       font-size: 0.85rem;
@@ -145,9 +150,8 @@
         grid-template-columns: 1fr;
       }
 
-      }
-  </style>
-</head: column;
+      .header-content {
+        flex-direction: column;
         align-items: flex-start;
       }
     }
@@ -158,7 +162,7 @@
   <header>
     <div class="header-content">
       <div>
-        <h1>دانشگاه علم و فناوری</h1>
+        <h1>دانشگاه علم و فناوری — نسخه ۲</h1>
         <p>درگاه رسمی اطلاع‌رسانی و خدمات الکترونیک</p>
       </div>
 
@@ -185,27 +189,27 @@
         <h2>اخبار و رویدادهای دانشگاه</h2>
 
         <article class="news-item">
-          <h3>اعلام زمان انتخاب واحد نیمسال جدید</h3>
+          <h3>تمدید مهلت ثبت‌نام وام‌های دانشجویی صندوق رفاه</h3>
           <p>
-            برنامه انتخاب واحد دانشجویان در سامانه جامع آموزش دانشگاه منتشر شد.
+            دانشجویان متقاضی وام تحصیلی و مسکن می‌توانند تا پایان هفته جاری نسبت به ثبت درخواست اقدام نمایند.
+          </p>
+          <span>تاریخ انتشار: ۳ شهریور ۱۴۰۵</span>
+        </article>
+
+        <article class="news-item">
+          <h3>ثبت‌نام متقاضیان پذیرش بدون آزمون در مقطع کارشناسی ارشد</h3>
+          <p>
+            داوطلبان می‌توانند از تاریخ ۱۰ شهریور با مراجعه به سامانه جامع آموزش نسبت به بارگذاری مدارک اقدام نمایند.
+          </p>
+          <span>تاریخ انتشار: ۲ شهریور ۱۴۰۵</span>
+        </article>
+
+        <article class="news-item">
+          <h3>برگزاری بیست و هشتمین همایش بین‌المللی کامپیوتر و امنیت داده</h3>
+          <p>
+            محورهای همایش، زمان‌بندی ارسال مقالات و نحوه ثبت‌نام در وب‌سایت دانشکده مهندسی کامپیوتر اعلام شد.
           </p>
           <span>تاریخ انتشار: ۱ شهریور ۱۴۰۵</span>
-        </article>
-
-        <article class="news-item">
-          <h3>فراخوان ثبت‌نام در دوره‌های مهارتی تابستان</h3>
-          <p>
-            دانشجویان علاقه‌مند می‌توانند برای شرکت در دوره‌های مهارتی ثبت‌نام کنند.
-          </p>
-          <span>تاریخ انتشار: ۳۱ مرداد ۱۴۰۵</span>
-        </article>
-
-        <article class="news-item">
-          <h3>برگزاری نشست علمی اعضای هیئت علمی</h3>
-          <p>
-            نشست علمی دانشگاه با حضور استادان و پژوهشگران برگزار خواهد شد.
-          </p>
-          <span>تاریخ انتشار: ۳۰ مرداد ۱۴۰۵</span>
         </article>
       </section>
 
@@ -215,8 +219,8 @@
         <div class="grid-links">
           <a href="/faculties/computer">دانشکده مهندسی کامپیوتر</a>
           <a href="/faculties/electrical">دانشکده مهندسی برق</a>
-          <a href="/faculties/mechanical">دانشکده مهندسی مکانیک</a>
-          <a href="/faculties/civil">دانشکده مهندسی عمران</a>
+          <a href="/faculties/mechanical">دانشکدانشکده مهندسی عمران</a>
+a href="/faculties/civil">دانشکده مهندسی عمران</a>
           <a href="/faculties/science">دانشکده علوم پایه</a>
           <a href="/faculties/management">دانشکده اقتصاد و مدیریت</a>
         </div>
@@ -228,19 +232,20 @@
         <h2>سامانه‌های پرکاربرد</h2>
 
         <div class="grid-links" style="grid-template-columns: 1fr;">
-          <a href="/systems/golestan">سامانه جامع آموزشی</a>
-          <a href="/systems/lms">سامانه آموزش مجازی</a>
+          <a href="/systems/golestan">سامانه جامع آموزشی (گلستان)</a>
+          <a href="/systems/lms">سامانه آموزش مجازی (LMS)</a>
           <a href="/systems/stu">سامانه تغذیه و رفاه دانشجویی</a>
           <a href="/systems/mail">سامانه پست الکترونیک دانشگاه</a>
-          <a href="/systems/library">کتابخانه مرکزی</a>
-          <a href="/systems/nan">درگاه نظام ایده‌ها و نیازها</a>
+          <a href="/systems/library">کتابخانه مرکزی و پایگاه اسناد</a>
+          <a href="/systems/nan">درگاه نظام ایده‌ها و نیازها (نان)</a>
         </div>
       </section>
 
       <section class="card">
-        <h2>اطلاعیه</h2>
-        <p style="font-size: 0.85rem; color: #475569;">
-          برنامه کلاس‌ها و اطلاعیه‌های آموزشی از طریق سامانه جامع آموزش منتشر می‌شود.
+        <h2>اطلاعیه مهم</h2>
+
+        <p style="font-size: 0.85rem; color: #4a5568;">
+          کلیه خدمات الکترونیکی در روزهای پنج‌شنبه به دلیل به‌روزرسانی زیرساخت‌های شبکه ممکن است با اختلال موقت مواجه شوند.
         </p>
       </section>
     </aside>
